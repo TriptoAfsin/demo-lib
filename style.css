@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 14px;
+}
+
+body{
+    font-family: 'Baloo Thambi 2', cursive;
+    background-color: white;
+    color: whitesmoke;
+}
+
+.search-bar{
+    position: sticky;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 1.5rem; 
+}
+.search-ui input{
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.795);
+    padding: 1rem 5rem;
+}
+.container{
+    font-size: 14px;
+    width: 350px;
+    margin: 10px auto;
+    position: relative;
+    user-select: none; /* prevents user from selcting ui elements*/
+}
+
+label{
+    margin-left: 0.5rem;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+label a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.795);
+    position: sticky;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(60, 172, 60);
+}
+
+nav ul li a{
+    background-color: #379b37;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    background-color: #379b37;
+}
+
+
+
+
+nav ul{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+}
+
+.ham-btn{
+    font-size: 30px;
+    margin-right: 0.8rem;
+    line-height: 50px;
+    float: right;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.img-holder{
+    margin-top: 4rem;
+    text-align: center;
+    visibility: visible;
+}
+
+.cloud{
+    height: 160px;
+    width: 220px;
+}
+
+.img-txt{
+    color: black;
+    font-size: 6rem;
+}
+
+.search-container{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.nav-btn{
+    cursor: pointer;
+}
+
+
+.search{
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    border: solid #47c047;
+    margin-left: -20%;
+    padding: 1.25rem 10rem;
+    visibility: visible;
+}
+
+.match-list{
+    text-align: center;
+}
+
+.card{
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: black;
+    margin-bottom: 0.5rem;
+    background-color: whitesmoke;
+    width: 100%;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.795);
+}
+
+.card span{
+    color: green;
+    font-weight: bold;
+}
+
+.list{
+    margin-top: 0.5rem;
+    color: black;
+    text-align: center;
+}
+
+#list p{
+    font-size: 1.25rem;
+}
+
+.list a{
+    color: white;
+    text-decoration: none;
+    background-color: #3cac3c;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+}
+
+.list a:hover{
+    border-radius: 5px;
+    background-color: #50ce50;
+}
+
+#check{
+    display: none;
+}
+
+.about{
+    margin-top: 5rem;
+    visibility: hidden;
+    color: black;
+}
+
+@media(max-width: 952px){
+    label.brand{
+        font-size: 40px;
+        padding-top: 50px;
+    }
+}
+@media(max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 858px){
+    .ham-btn{
+        display: block;
+    }
+}
+@media(max-width: 858px){
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #379b37;
+        top: 66.4px;
+        right: -105%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+}
+@media(max-width: 858px){
+    nav ul li{
+        display: block;
+    }
+}
+@media(max-width: 858px){
+    nav ul li a{
+        font-size: 30px; 
+    }
+}
+
+@media(max-width: 858px){
+    a:hover, a.nav-btn{
+        cursor: pointer;
+        background: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+@media(max-width: 858px){
+    #check:checked ~ ul{
+        width: 105%;
+        right: 0;
+    }
+}
+
+
+@media(max-width: 952px){
+    .img-holder{
+        margin-top: 3rem;
+        text-align: center;
+    }
+}
+@media(max-width: 952px){
+    .cloud{
+        height: 140px;
+        width: 200px;
+    }
+}
+@media(max-width: 952px){
+    .img-txt{
+        color: black;
+        font-size: 5rem;
+    }
+}
+@media(max-width: 858px){
+    .img-holder{
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+@media(max-width: 858px){
+    .cloud{
+        height: 100px;
+        width: 160px;
+    }
+}
+@media(max-width: 858px){
+    .img-txt{
+        color: black;
+        font-size: 3rem;
+    }
+}
+@media(max-width: 858px){
+    .search{
+        font-size: 1.5rem;
+        text-align: center;
+        border-radius: 10px;
+        border: solid #47c047;
+        margin-left: 0%;
+        padding: 1.25rem 4rem;
+        visibility: visible;
+    }
+}
