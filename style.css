@@ -287,11 +287,16 @@ nav ul li{
     }
 }
 @media(max-width: 858px){
+   margin-top: 1.5rem; 
+    margin-top: 1rem;
+    text-align: center;
+}
+@media(max-width: 858px){
     .search{
         border-radius: 5px;
         font-size: large;
         box-shadow: 1px 3px 10px 0 rgba(74, 128, 228, 0.795);
-        padding: 1rem 6rem;
+        padding: 1rem 5rem;
     }
 }
 
