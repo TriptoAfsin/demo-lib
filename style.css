@@ -17,18 +17,18 @@ body{
     color: whitesmoke;
 }
 
-.search-bar{
-    position: sticky;
-    width: auto;
-    height: auto;
-    text-align: center;
+.search-container{
     margin-top: 1.5rem; 
+    margin-top: 1rem;
+    text-align: center;
 }
-.search-ui input{
-    border: none;
+
+.search{
+    border: solid white;
+    visibility: visible;
     border-radius: 5px;
     font-size: large;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.795);
+    box-shadow: 1px 3px 10px 0 rgba(105, 149, 175, 0.795);
     padding: 1rem 5rem;
 }
 .container{
@@ -110,25 +110,14 @@ nav ul li{
     font-size: 6rem;
 }
 
-.search-container{
-    margin-top: 1rem;
-    text-align: center;
-}
+
 
 .nav-btn{
     cursor: pointer;
 }
 
 
-.search{
-    font-size: 1.5rem;
-    text-align: center;
-    border-radius: 10px;
-    border: solid #47c047;
-    margin-left: -20%;
-    padding: 1.25rem 10rem;
-    visibility: visible;
-}
+
 
 .match-list{
     text-align: center;
@@ -139,9 +128,9 @@ nav ul li{
     margin-top: 1rem;
     color: black;
     margin-bottom: 0.5rem;
-    background-color: whitesmoke;
+    background-color: white;
     width: 100%;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.795);
+    box-shadow: 0 3px 5px 0 rgba(105, 149, 175, 0.795);
 }
 
 .card span{
@@ -299,12 +288,10 @@ nav ul li{
 }
 @media(max-width: 858px){
     .search{
-        font-size: 1.5rem;
-        text-align: center;
-        border-radius: 10px;
-        border: solid #47c047;
-        margin-left: 0%;
-        padding: 1.25rem 4rem;
-        visibility: visible;
+        border-radius: 5px;
+        font-size: large;
+        box-shadow: 1px 3px 10px 0 rgba(74, 128, 228, 0.795);
+        padding: 1rem 6rem;
     }
 }
+
