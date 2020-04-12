@@ -3,11 +3,36 @@ window.onload = function(){
     const matchList = document.getElementById("list");
 let books;
 
-
+let database = [
+    {
+		"writer": "Gias Uddin",
+		"name": "Physics for Engineers",
+        "language": "English",
+        "subject": "Physics",
+		"page": "1200",
+		"link": "https://drive.google.com/file/d/1AGP280Qf8lD6es6yTtJBHbExDePOY-Rl/view"
+	},
+    {
+		"writer": "James Halliday",
+		"name": "Elementary Physics",
+        "language": "English",
+        "subject": "Physics",
+		"page": "800",
+		"link": "fdfdfd"
+    },
+    {
+		"writer": "Dr. Hosne Ara",
+		"name": "Natural Textile Fibre",
+        "language": "English",
+        "subject": "Yarn",
+		"page": "400",
+		"link": "fdfdfd"
+	}
+];
+    
 //this function searches the booklist
 const searchBooks = async searchText =>{
-    const res = await fetch('./database.json');
-    books = await res.json();
+    books = database;
     //get matches
     let matches = books.filter(book =>{
         const regex = new RegExp(`${searchText}`, 'gi'); // ^: will search for which resuls starts with 
