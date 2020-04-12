@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Lib</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="ham-btn">
+            <img src="./ham.png" height="24px" width="28px" id="ham-btn">
+        </label>
+        <label class="brand"><a href="./index.html">Cloud Lib</a></label>
+        <ul>
+            <li><a href="./index.html" class="nav-btn">Home</a></li>
+            <li><a href="#" class="nav-btn">Books </a></li>
+            <li><a href="https://forms.gle/pqU9wSkTNAaepBJY8" class="nav-btn" target="blank">Submit Books</a></li>
+            <li><a href="#" class="nav-btn">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+          
+    </div>
+    <script src="./main.js"></script>
+    <script>
+        var counter = 0;
+        document.getElementById("ham-btn").addEventListener("click", function(){
+            counter ++;
+            if(counter %2 == 1){
+                document.getElementById("img-holder").style.display = "none";
+                document.getElementById("search").style.display = "none";
+                document.getElementById("list").style.display = "none";
+
+            }
+            else{
+                document.getElementById("img-holder").style.display = "block";
+                document.getElementById("search").style.display = "block";
+                document.getElementById("list").style.display = "block";
+            }    
+        })
+    </script>
+</body>
+</html>
