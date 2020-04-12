@@ -6,7 +6,7 @@ let books;
 
 //this function searches the booklist
 const searchBooks = async searchText =>{
-    const res = await fetch('../database.json');
+    const res = await fetch('./database.json');
     books = await res.json();
     //get matches
     let matches = books.filter(book =>{
