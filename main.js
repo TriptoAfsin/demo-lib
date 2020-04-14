@@ -1979,12 +1979,11 @@ const outputHtml = matches =>{
         </div>
         `).join('');
         console.log(html);
-        document.getElementById("suggestion").style.display = "none";
         matchList.innerHTML = html;
     }
     else{
         matchList.innerHTML = null;
-        document.getElementById("suggestion").style.display = "inline-block";
+        
     }
 };
 
